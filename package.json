@@ -1,6 +1,6 @@
 {
   "name": "json-object-crypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility for encrypting and decrypting JSON objects with selective field encryption",
   "main": "index.js",
   "scripts": {
