@@ -1,0 +1,34 @@
+{
+  "name": "json-object-crypto",
+  "version": "1.0.0",
+  "description": "A utility for encrypting and decrypting JSON objects with selective field encryption",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "encryption",
+    "crypto",
+    "json",
+    "aes",
+    "security",
+    "object",
+    "selective"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/json-object-crypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/json-object-crypto/issues"
+  },
+  "homepage": "https://github.com/yourusername/json-object-crypto#readme"
+}
