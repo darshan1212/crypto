@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/json-object-crypto.git"
+    "url": "git+https://github.com/darshan1212/json-object-crypto.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/json-object-crypto/issues"
+    "url": "https://github.com/darshan1212/json-object-crypto/issues"
   },
-  "homepage": "https://github.com/yourusername/json-object-crypto#readme"
+  "homepage": "https://github.com/darshan1212/json-object-crypto#readme"
 }
