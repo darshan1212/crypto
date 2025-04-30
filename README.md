@@ -33,43 +33,39 @@ const data = {
 };
 
 // Encrypt specific fields
-const encrypted = crypto.encrypt(data, "your-secret-key", {
-  keys: ["password", "email"]
-});
+const encrypted = crypto.encrypt(data, "your-secret-key");
 
 // Decrypt the encrypted object
-const decrypted = crypto.decrypt(encrypted, "your-secret-key", {
-  keys: ["password", "email"]
-});
+const decrypted = crypto.decrypt(encrypted, "your-secret-key");
 ```
 
 ## API
 
-### `encrypt(object, password, config)`
+### `encrypt(object, password)`
 
 Encrypts an object with the given password.
 
 #### Parameters
 
-- `object` (Object): The object to encrypt
+- `object` (Object): The JSON object to encrypt
 - `password` (string): The encryption password
 - `config` (Object): Configuration options
   - `algorithm` (string): Encryption algorithm (default: 'aes-256-cbc')
   - `encoding` (string): Output encoding (default: 'hex')
-  - `keys` (string[]): Keys to encrypt (default: [], encrypts all)
+  - `keys` (string[]): Optional array of keys to encrypt (if not provided, encrypts all fields)
 
-### `decrypt(object, password, config)`
+### `decrypt(object, password)`
 
 Decrypts an object with the given password.
 
 #### Parameters
 
-- `object` (Object): The object to decrypt
+- `object` (Object): The JSON object to decrypt
 - `password` (string): The decryption password
 - `config` (Object): Configuration options
   - `algorithm` (string): Encryption algorithm (default: 'aes-256-cbc')
   - `encoding` (string): Input encoding (default: 'hex')
-  - `keys` (string[]): Keys to decrypt (default: [], decrypts all)
+  - `keys` (string[]): Optional array of keys to decrypt (if not provided, decrypts all fields)
 
 ## License
 
